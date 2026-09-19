@@ -180,11 +180,11 @@ export const botConfig = {
 
     // Work command random payout range.
     workMin: 0,
-    workMax: 1000000000000000,
+    workMax: 10000,
 
     // Beg command random payout range.
     begMin: 0,
-    begMax: 50000000000000,
+    begMax: 50000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -412,19 +412,19 @@ export const botConfig = {
     types: {
       // Built-in counter types and how each count is calculated.
       members: {
-        name: "👥 Members",
-        description: "Total members in the server",
+        name: "/sosad,
+        description: "total members in the server",
         getCount: (guild) => guild.memberCount.toString(),
       },
       bots: {
-        name: "🤖 Bots",
-        description: "Total bot accounts in the server",
+        name: "bots",
+        description: "total bots in the server",
         getCount: (guild) =>
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
-        name: "👤 Humans",
-        description: "Total human members (non-bots)",
+        name: "humans",
+        description: "Total humans (non-bots)",
         getCount: (guild) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
       },
