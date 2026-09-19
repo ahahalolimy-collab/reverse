@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "test bot 🦴",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -61,9 +61,10 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "why do you wanna be a mod?", required: true },
+      { question: "whats ur timezone and age?", required: true },
+      { question: "why should we hire you?", required: true },
+      { question: "are u able to host giveaways?", required: true },
     ],
 
     // Embed colors by application status.
@@ -77,7 +78,7 @@ export const botConfig = {
     applicationCooldown: 24,
 
     // Auto-delete denied applications after this many days.
-    deleteDeniedAfter: 7,
+    deleteDeniedAfter: 1,
 
     // Auto-delete approved applications after this many days.
     deleteApprovedAfter: 30,
@@ -161,11 +162,11 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "bone",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "bones",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "𐂯",
     },
 
     // Starting balance for new users.
@@ -175,15 +176,15 @@ export const botConfig = {
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 60,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 0,
+    workMax: 1000000000000000,
 
     // Beg command random payout range.
-    begMin: 5,
-    begMax: 50,
+    begMin: 0,
+    begMax: 50000000000000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -268,7 +269,7 @@ export const botConfig = {
 
     // Allowed winner count range.
     minimumWinners: 1,
-    maximumWinners: 10,
+    maximumWinners: 20,
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
